@@ -20,4 +20,5 @@ jobs:
         with:
           token: ${{ steps.app-token.outputs.token }}
           ref: ${{ github.head_ref }}
+      - run: echo ${{github.actor}}
       
