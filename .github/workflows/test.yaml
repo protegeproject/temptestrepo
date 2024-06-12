@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.actor != 'protegeproject-bot' }}
     steps:
-      - run: echo ${{ github.actor != 'protegeproject-bot' }}
+      - run: echo ${{github.actor}}
       - uses: actions/create-github-app-token@v1
         id: app-token
         with:
